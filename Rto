@@ -1,0 +1,9 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ปรับแต่งค่าความเร็วและความสูงตรงนี้ได้เลย
+humanoid.WalkSpeed = 100 -- ค่าปกติคือ 16
+humanoid.JumpPower = 150 -- ค่าปกติคือ 50 (หรือถ้าระบบเกมเป็น JumpHeight ให้เปลี่ยนเป็น humanoid.JumpHeight = 10)
+
+print("Speed and Jump boosted!")
